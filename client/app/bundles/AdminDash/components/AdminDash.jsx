@@ -18,7 +18,6 @@ export default class AdminDash extends React.Component {
              <p>Status by Age</p>
               <AgePie/>
             </div>
-
             <div className="col s5 userpie">
               <UserPie/>
             </div>

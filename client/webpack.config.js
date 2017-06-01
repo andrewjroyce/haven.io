@@ -13,6 +13,7 @@ const config = {
     'es5-shim/es5-sham',
     'babel-polyfill',
     './app/bundles/AdminDash/startup/registration',
+    './app/bundles/UserDash/startup/registration',
   ],
 
   output: {

@@ -13,6 +13,13 @@ Rails.application.routes.draw do
     resources :histories, only: [:create, :new]
   end
 
+  get '/signup' => 'users#new'
+  get '/reports' => 'reports#show'
+  get '/reports' => 'reports#index'
+  get '/histories' => 'histories#show'
+  get '/histories' => 'histories#index'
+  get '/user_dashboard' => 'user_dashboard#index'
+
   namespace :admin do
     root to: 'users#index'
     get '/dashboard' => 'dashboard#index'
@@ -20,10 +27,15 @@ Rails.application.routes.draw do
   end
 
   namespace :api do
+
+
     get '/users' => 'users#name'
     get '/users/count' => 'users#count'
     get '/users/age' => 'users#age'
     get 'users/breakdown' => 'users#breakdown'
+    get 'users/:id' => 'users#find'
+    get '/users/:id/accuity/' => 'reports#accuity'
+    get '/users/:id/profile/' => 'users#profile'
     get '/users/:id/accuity' => 'reports#accuity'
     get '/reports/time' => 'reports#time'
   end

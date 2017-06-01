@@ -8,7 +8,6 @@ import UserCount from './UserCount.jsx';
 export default class LeftLayout extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       selectedUserId: '',
       radarData: [
@@ -20,7 +19,7 @@ export default class LeftLayout extends React.Component {
         { subject: 'Substance', A: 0, fullMark: 4 },
         { subject: 'Danger', A: 0, fullMark: 4 },
         { subject: 'Situational', A: 0, fullMark: 4 },
-      ]
+      ],
     };
   }
 
@@ -39,6 +38,7 @@ export default class LeftLayout extends React.Component {
     .then((res)=> res.json())
     .then(data =>{
       this.handleResponse(data);
+
     });
   }
 

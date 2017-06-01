@@ -66,9 +66,9 @@ ActiveRecord::Schema.define(version: 20170529192118) do
     t.boolean "hiv"
     t.boolean "veteran"
     t.string "immigrant"
+    t.string "gender"
     t.integer "age"
     t.boolean "lgbt"
-    t.string "gender"
     t.string "picture"
   end
 

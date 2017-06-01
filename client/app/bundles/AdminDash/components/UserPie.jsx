@@ -29,11 +29,13 @@ export default class UserPie extends React.Component{
   }
 
   handleResponse = (data) => {
+
     let new_state = [];
     for(let key in data){
       new_state.push({name: key, value: data[key]})
     };
     this.setState({data: new_state});
+    console.log(new_state)
   }
 
   handleClick = (filter) => {
@@ -41,7 +43,6 @@ export default class UserPie extends React.Component{
   }
 
   clear = () => {clearInterval(this.state.intervalId)}
-
   render(){
     return(
       <div className="col s12">
