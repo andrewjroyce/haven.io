@@ -69,13 +69,20 @@ class Api::UsersController < Api::APIController
   end
 
   def name
-    @users = User.select("id, name, gender, picture").where("admin = false").order(:id)
+    @users = User.select("id, name, gender, picture").where("admin = false").order(:id).limit(8)
     render json: @users
   end
+
+  def profile
+    user = User.find(params[:id]) 
+    @headshot =User.select("id, name, gender, marital_status, profession, immigrant, age").where("id = ? AND admin = false", params[:id]).order(:age)
+    render json: @headshot
+  end
+
 
   def count
     @count = User.where("admin = false").count
     render json: @count
   end
-
+  
 end

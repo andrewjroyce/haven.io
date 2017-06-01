@@ -29,13 +29,25 @@
     </div>
   </div>
 
+<script src="/assets/geoPosition.js" type="text/javascript" charset="utf-8"></script>
+
   <div class="center-btn">
-    <a class="waves-effect waves-light btn"><%= submit_tag "Submit" %></a>
+    <a class="waves-effect waves-light btn" ><%= submit_tag "Submit" %></a>
+    <div></div>
   </div>
+
+<%- unless @lat_lng %>
+<script>
+  getGeoLocation();
+</script>
+<%- end %>
 
 </div>
 
 <% end %>
+
+
+
 
 <div class="footer">
   <footer>© 2017 haven.to. All rights reserved.</footer>

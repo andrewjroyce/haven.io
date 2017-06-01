@@ -6,7 +6,6 @@ export default class UserList extends React.Component {
 
     constructor(props) {
       super(props);
-
       this.state = {users: []};
   }
 
@@ -22,6 +21,7 @@ export default class UserList extends React.Component {
   }
 
   handleResponse = (data) => {
+    console.log(this)
     this.setState({users: data});
   }
 

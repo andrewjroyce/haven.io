@@ -10,7 +10,7 @@ export default class UserPie extends React.Component{
     this.state ={
       intervalId: '',
       data: [
-        {name: 'Total', value: 60},
+        {name: 'Total', value: 60, fill: '#d0ed57'},
       ]
     }
   }
@@ -29,11 +29,20 @@ export default class UserPie extends React.Component{
   }
 
   handleResponse = (data) => {
+    function newColor(){
+    var letters = 'ABCDE'.split('');
+    var color = '#';
+    for (var i=0; i<3; i++ ) {
+        color += letters[Math.floor(Math.random() * letters.length)];
+    }
+    return color;
+}
     let new_state = [];
     for(let key in data){
-      new_state.push({name: key, value: data[key]})
+      new_state.push({name: key, value: data[key], label: key, fill: newColor()})
     };
     this.setState({data: new_state});
+    console.log(new_state)
   }
 
   handleClick = (filter) => {

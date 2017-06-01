@@ -48,6 +48,7 @@ html, body {
     }
   }
   .radar-pie {
+
     flex-direction: column;
     align-items: center;
     height: 26.5rem;
@@ -62,8 +63,8 @@ html, body {
       color: #26a69a;
     }
     .recharts-layer {
-      font-size: 0.95rem;
-    }
+      font-size: 0.90rem;
+    } 
   }
   .row.filling {
     height: 2rem;
@@ -84,16 +85,16 @@ html, body {
         margin-top: 1.5rem;
         display: flex;
         justify-content: space-around;
-        padding-right: 3rem;
-        padding-left: 2rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
         button {
           height: 2rem;
         }
-      }
+      } 
       .buttons-second-row {
         display: flex;
         justify-content: space-around;
-        margin-top: 0.6rem;
+        margin-top: 0.5rem;
         padding-left: 2rem;
         padding-right: 3rem;
         button {
@@ -123,11 +124,13 @@ html, body {
       }
       .buttons {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: false;
         justify-content: space-around;
         button {
-          width: 9rem;
-          padding-left: 1rem;
+          width: 7.4rem;
+          margin-top: 0.5rem;
+          padding-left: .4rem;
+          padding-right: .4rem;
           height: 2rem;
           margin-bottom: 0.7rem;
         }
@@ -135,7 +138,7 @@ html, body {
     }
   }
   .timeseries {
-    overflow: scroll;
+    overflow: none;
     margin-right: 2rem;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
     border-radius: 2px;
@@ -150,13 +153,14 @@ html, body {
       .buttons {
         margin-bottom: 1.5rem;
         align-self: flex-start;
-        margin-left: 4.5rem;
+        margin-left: 29.5rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         button {
           width: 9rem;
           padding-left: 1rem;
+          padding-right: 1rem;
           margin: 0.5rem;
           height: 2rem;
           margin-bottom: 0.7rem;
