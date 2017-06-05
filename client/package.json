@@ -31,7 +31,13 @@
     "react-dom": "^15.5.4",
     "react-on-rails": "6.10.1",
     "recharts": "^0.22.4",
-    "webpack": "^2.3.3"
+    "webpack": "^2.3.3",
+    "classnames": "^2.2.5",
+    "google-map-react": "^0.24.0",
+    "mapbox": "^1.0.0-beta7",
+    "point-geometry": "^0.1.0",
+    "react-controllable": "^0.1.1",
+    "react-pure-render": "^1.0.2"
   },
   "devDependencies": {}
 }

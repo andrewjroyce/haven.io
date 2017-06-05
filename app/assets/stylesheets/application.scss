@@ -22,3 +22,14 @@
  *= require_tree .
  *= require_self
  */
+
+.alert{
+    color: #0824bd;
+    width: 100%;
+    height: 2.5em;
+    background-color: rgba(131, 134, 131, 0.31);
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

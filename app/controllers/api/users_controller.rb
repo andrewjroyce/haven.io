@@ -26,55 +26,55 @@ class Api::UsersController < Api::APIController
       @users = {}
     case params[:q]
     when 'veteran'
-      @users['0-19'] = User.where("admin = false AND age < 20 AND veteran = true").count
-      @users['20-29'] = User.where("admin = false AND age >= 20 AND age < 30 AND veteran = true").count
-      @users['30-39'] = User.where("admin = false AND age >= 30 AND age < 40 AND veteran = true").count
-      @users['40-49'] = User.where("admin = false AND age >= 40 AND age < 50 AND veteran = true").count
-      @users['50-59'] = User.where("admin = false AND age >= 50 AND age < 60 AND veteran = true").count
-      @users['60+'] = User.where("admin = false AND age >= 60 AND veteran = true").count
+      @users['0-19'] = User.where("admin = false AND age < 25 AND veteran = true").count
+      @users['20-29'] = User.where("admin = false AND age >= 25 AND age < 35 AND veteran = true").count
+      @users['30-39'] = User.where("admin = false AND age >= 35 AND age < 45 AND veteran = true").count
+      @users['40-49'] = User.where("admin = false AND age >= 45 AND age < 55 AND veteran = true").count
+      @users['50-59'] = User.where("admin = false AND age >= 55 AND age < 65 AND veteran = true").count
+      @users['60+'] = User.where("admin = false AND age >= 65 AND veteran = true").count
       render json: @users
     when 'hiv'
-      @users['0-19'] = User.where("admin = false AND age < 20 AND hiv = true").count
-      @users['20-29'] = User.where("admin = false AND age >= 20 AND age < 30 AND hiv = true").count
-      @users['30-39'] = User.where("admin = false AND age >= 30 AND age < 40 AND hiv = true").count
-      @users['40-49'] = User.where("admin = false AND age >= 40 AND age < 50 AND hiv = true").count
-      @users['50-59'] = User.where("admin = false AND age >= 50 AND age < 60 AND hiv = true").count
-      @users['60+'] = User.where("admin = false AND age >= 60 AND hiv = true").count
+      @users['0-19'] = User.where("admin = false AND age < 25 AND hiv = true").count
+      @users['20-29'] = User.where("admin = false AND age >= 25 AND age < 35 AND hiv = true").count
+      @users['30-39'] = User.where("admin = false AND age >= 35 AND age < 45 AND hiv = true").count
+      @users['40-49'] = User.where("admin = false AND age >= 45 AND age < 55 AND hiv = true").count
+      @users['50-59'] = User.where("admin = false AND age >= 55 AND age < 65 AND hiv = true").count
+      @users['60+'] = User.where("admin = false AND age >= 65 AND hiv = true").count
       render json: @users
     when 'male'
-      @users['0-19'] = User.where("admin = false AND age < 20 AND gender = 'male'").count
-      @users['20-29'] = User.where("admin = false AND age >= 20 AND age < 30 AND gender = 'male'").count
-      @users['30-39'] = User.where("admin = false AND age >= 30 AND age < 40 AND gender = 'male'").count
-      @users['40-49'] = User.where("admin = false AND age >= 40 AND age < 50 AND gender = 'male'").count
-      @users['50-59'] = User.where("admin = false AND age >= 50 AND age < 60 AND gender = 'male'").count
-      @users['60+'] = User.where("admin = false AND age >= 60 AND gender = 'male'").count
+      @users['0-19'] = User.where("admin = false AND age < 25 AND gender = 'male'").count
+      @users['20-29'] = User.where("admin = false AND age >= 25 AND age < 35 AND gender = 'male'").count
+      @users['30-39'] = User.where("admin = false AND age >= 35 AND age < 45 AND gender = 'male'").count
+      @users['40-49'] = User.where("admin = false AND age >= 45 AND age < 55 AND gender = 'male'").count
+      @users['50-59'] = User.where("admin = false AND age >= 55 AND age < 65 AND gender = 'male'").count
+      @users['60+'] = User.where("admin = false AND age >= 65 AND gender = 'male'").count
       render json: @users
       when 'female'
-      @users['0-19'] = User.where("admin = false AND age < 20 AND gender = 'female'").count
-      @users['20-29'] = User.where("admin = false AND age >= 20 AND age < 30 AND gender = 'female'").count
-      @users['30-39'] = User.where("admin = false AND age >= 30 AND age < 40 AND gender = 'female'").count
-      @users['40-49'] = User.where("admin = false AND age >= 40 AND age < 50 AND gender = 'female'").count
-      @users['50-59'] = User.where("admin = false AND age >= 50 AND age < 60 AND gender = 'female'").count
-      @users['60+'] = User.where("admin = false AND age >= 60 AND gender = 'female'").count
+      @users['0-19'] = User.where("admin = false AND age < 25 AND gender = 'female'").count
+      @users['20-29'] = User.where("admin = false AND age >= 25 AND age < 35 AND gender = 'female'").count
+      @users['30-39'] = User.where("admin = false AND age >= 35 AND age < 45 AND gender = 'female'").count
+      @users['40-49'] = User.where("admin = false AND age >= 45 AND age < 55 AND gender = 'female'").count
+      @users['50-59'] = User.where("admin = false AND age >= 55 AND age < 65 AND gender = 'female'").count
+      @users['60+'] = User.where("admin = false AND age >= 65 AND gender = 'female'").count
       render json: @users
     else
-      @users['0-19'] = User.where("admin = false AND age < 20").count
-      @users['20-29'] = User.where("admin = false AND age >= 20 AND age < 30").count
-      @users['30-39'] = User.where("admin = false AND age >= 30 AND age < 40").count
-      @users['40-49'] = User.where("admin = false AND age >= 40 AND age < 50").count
-      @users['50-59'] = User.where("admin = false AND age >= 50 AND age < 60").count
-      @users['60+'] = User.where("admin = false AND age >= 60").count
+      @users['0-19'] = User.where("admin = false AND age < 25").count
+      @users['20-29'] = User.where("admin = false AND age >= 25 AND age < 35").count
+      @users['30-39'] = User.where("admin = false AND age >= 35 AND age < 45").count
+      @users['40-49'] = User.where("admin = false AND age >= 45 AND age < 55").count
+      @users['50-59'] = User.where("admin = false AND age >= 55 AND age < 65").count
+      @users['60+'] = User.where("admin = false AND age >= 65").count
       render json: @users
     end
   end
 
   def name
-    @users = User.select("id, name, gender, picture").where("admin = false").order(:id).limit(8)
+    @users = User.select("id, name, gender, picture").where("admin = false").order(:id)
     render json: @users
   end
 
   def profile
-    user = User.find(params[:id]) 
+    user = User.find(params[:id])
     @headshot =User.select("id, name, gender, marital_status, profession, immigrant, age").where("id = ? AND admin = false", params[:id]).order(:age)
     render json: @headshot
   end
@@ -84,5 +84,5 @@ class Api::UsersController < Api::APIController
     @count = User.where("admin = false").count
     render json: @count
   end
-  
+
 end

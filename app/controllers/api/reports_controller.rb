@@ -54,6 +54,7 @@ class Api::ReportsController < Api::UsersController
       end
 
       if @accuity['Housing'] < 0
+        @accuity['Housing'] = 0
       elsif @accuity['Housing'] > 5
         @accuity['Housing'] = 4
       else

@@ -1,6 +1,6 @@
 <nav>
   <div class="nav-wrapper">
-    <img href="/" src="http://i.magaimg.net/img/nv9.png"href="/" class="brand-logo" style="width:230px;height:60px;" >
+    <img href="/" src="http://i.magaimg.net/img/nv9.png"href="/" class="brand-logo" style="width:auto;height:50px;margin-top: 0.3rem;" >
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <% if current_user %>
@@ -28,6 +28,7 @@
             <ul id='dropdown1' class='dropdown-content'>
               <li><%= link_to 'Home', '/' %></li>
               <li><%= link_to "Profile", user_path(id: current_user.id) %></li>
+              <li><%= link_to "Services", '/user_dashboard' %> </li>
               <li><%= link_to "Logout", '/logout' %></li>
             </ul>
           </li>

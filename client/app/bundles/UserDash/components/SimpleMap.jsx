@@ -40,7 +40,7 @@ export default class SimpleMap extends Component  {
 
   static defaultProps = {
     center: {lat: 43.64444, lng: -79.39518},
-    zoom: 14,
+    zoom: 15,
     style: {
           width: 80,
           height: 80,
@@ -72,7 +72,7 @@ export default class SimpleMap extends Component  {
                 borderColor: '#2c2c2c',
                 arrowStyle: 1
               });
-              var image = 'https://chart.googleapis.com/chart?chst=d_map_pin_icon&chld=glyphish_house|FFFFFF|000000'
+              var image = 'https://chart.googleapis.com/chart?chst=d_map_pin_icon&chld=glyphish_fork-and-knife|26a69a|000000'
               const marker = new maps.Marker({
                 title: "Drop-In",
                 icon: image,
@@ -140,7 +140,7 @@ export default class SimpleMap extends Component  {
                 arrowStyle: 1
               });
 
-              var image = 'https://chart.googleapis.com/chart?chst=d_map_pin_icon&chld=home|FFFFFF|000000'
+              var image = 'https://chart.googleapis.com/chart?chst=d_map_pin_icon&chld=home|5da8c1|000000'
               
               const marker = new maps.Marker({
                 map: map,

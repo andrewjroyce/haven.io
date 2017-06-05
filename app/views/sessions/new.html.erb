@@ -1,5 +1,5 @@
 <div class="entrance-text">
-  <h1>Welcome to Haven.io! <br> <br> Please Login to continue</h1>
+  <h1>Welcome to Haven.to! <br> <br> Please Login to continue</h1>
 </div>
 
 <%= form_tag '/login' do %>
@@ -29,18 +29,11 @@
     </div>
   </div>
 
-<script src="/assets/geoPosition.js" type="text/javascript" charset="utf-8"></script>
 
   <div class="center-btn">
     <a class="waves-effect waves-light btn" ><%= submit_tag "Submit" %></a>
-    <div></div>
   </div>
 
-<%- unless @lat_lng %>
-<script>
-  getGeoLocation();
-</script>
-<%- end %>
 
 </div>
 

@@ -63,7 +63,7 @@ html, body {
       color: #26a69a;
     }
     .recharts-layer {
-      font-size: 0.90rem;
+      font-size: 0.95rem;
     } 
   }
   .row.filling {
@@ -85,8 +85,8 @@ html, body {
         margin-top: 1.5rem;
         display: flex;
         justify-content: space-around;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: 3rem;
+        padding-left: 2rem;
         button {
           height: 2rem;
         }
@@ -94,7 +94,7 @@ html, body {
       .buttons-second-row {
         display: flex;
         justify-content: space-around;
-        margin-top: 0.5rem;
+        margin-top: 0.6rem;
         padding-left: 2rem;
         padding-right: 3rem;
         button {
@@ -124,13 +124,12 @@ html, body {
       }
       .buttons {
         display: flex;
-        flex-wrap: false;
+        flex-wrap: wrap;
         justify-content: space-around;
         button {
-          width: 7.4rem;
-          margin-top: 0.5rem;
-          padding-left: .4rem;
-          padding-right: .4rem;
+          width: 9rem;
+          padding-left: 1rem;
+          
           height: 2rem;
           margin-bottom: 0.7rem;
         }
@@ -153,14 +152,13 @@ html, body {
       .buttons {
         margin-bottom: 1.5rem;
         align-self: flex-start;
-        margin-left: 29.5rem;
+        margin-left: 4.5rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         button {
           width: 9rem;
           padding-left: 1rem;
-          padding-right: 1rem;
           margin: 0.5rem;
           height: 2rem;
           margin-bottom: 0.7rem;
