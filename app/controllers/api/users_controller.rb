@@ -75,7 +75,7 @@ class Api::UsersController < Api::APIController
 
   def profile
     user = User.find(params[:id])
-    @headshot =User.select("id, name, gender, marital_status, profession, immigrant, age").where("id = ? AND admin = false", params[:id]).order(:age)
+    @headshot =User.select("id, name, gender, marital_status, profession, immigrant, picture, age ").where("id = ? AND admin = false", params[:id]).order(:age)
     render json: @headshot
   end
 

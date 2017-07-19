@@ -67,7 +67,7 @@ export default class AgePie extends React.Component{
     let poll = setInterval(()=>{
       this.pullUsers();
       this.setState({intervalId: poll});
-    }, 2000)
+    }, 10000)
   }
 
   render(){
@@ -81,8 +81,7 @@ export default class AgePie extends React.Component{
         <div className="buttons-first-row">
           <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('')}>All</button>
           <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('hiv')}>HIV</button>
-          <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('male')}>Male</button> </div>
-         <div className="buttons-second-row">
+          <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('male')}>Male</button>
           <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('female')}>Female</button>
           <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('veteran')}>Veteran</button>
         </div>

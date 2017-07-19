@@ -5,8 +5,6 @@ import AgePie from './AgePie.jsx';
 import LeftLayout from './LeftLayout.jsx';
 import TimeSeries from './TimeSeries.jsx';
 
-
-
 export default class AdminDash extends React.Component {
   render() {
     return (

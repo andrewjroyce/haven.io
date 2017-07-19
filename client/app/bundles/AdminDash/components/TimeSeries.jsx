@@ -8,13 +8,13 @@ export default class TimeSeries extends React.Component {
     super(props);
     this.state ={
       show: [
-        'meetings',
-        // 'arrested',
+        //'meetings',
+         'arrested',
         // 'medicated',
-        // 'indoors',
+         'indoors',
         // 'bathed',
         // 'drugs',
-        'fights',
+        //'fights',
         'sentiment'
       ],
       color: {
@@ -62,13 +62,13 @@ export default class TimeSeries extends React.Component {
     data.forEach((day)=>{
       new_state.push({
         date: day.date,
-        meetings: day.meetings_count,
-        // arrested: day.arrested_count,
+        //meetings: day.meetings_count,
+         arrested: day.arrested_count,
         // medicated: day.medicated_count,
-        // indoors: day.indoors_count,
+         indoors: day.indoors_count,
         // bathed: day.bathed_count,
         // drugs: day.drugs_count,
-        fights: day.fights_count,
+        //fights: day.fights_count,
         sentiment: day.sentiment_average
       })
     });
@@ -86,12 +86,12 @@ export default class TimeSeries extends React.Component {
     })
     return (
       <div className="col s12">
-        <div className='buttons'>
+        <div className='buttons'> <p>Time Series</p>
           <button className="waves-effect waves-light btn" onClick={()=>this.getData('week')}>week</button>
           <button className="waves-effect waves-light btn" onClick={()=>this.getData('month')}>month</button>
         </div>
-        <LineChart width={820} height={500} data={this.state.data}
-              margin={{top: 5, right: 30, left: 5, bottom: 5}}>
+        <LineChart width={900} height={500} data={this.state.data}
+              margin={{top: 5, right: 5, left: 5, bottom: 5}}>
          <XAxis dataKey="date"/>
          <YAxis/>
          <CartesianGrid strokeDasharray="3 3"/>

@@ -21,16 +21,14 @@ class Avatar extends React.Component {
 }
 
 class MainPanel extends React.Component {
-
   render() {
     var info = this.props.info;
     if (!info) return null;
-    
     return (
      <div>
         <div className="top">
             <Avatar 
-               image={info.photo} 
+               image={`/uploads/${info.photo}` || info.photo}
                width={100}
                height={100}
             /> 
@@ -50,7 +48,7 @@ class MainPanel extends React.Component {
 
 export default class UserProfile extends React.Component {
   render() {
-    console.log(this.props.data)
+    console.log(this.props.info)
     return (
       <div id="user-profile">
         <MainPanel info={this.props.data} />

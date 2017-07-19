@@ -1,7 +1,7 @@
 import React from 'react';
 
 const List = ({drop,water,shelters,youth,matchMarker, lat, lng}) => {
-
+ 
   const dropItems = drop.map((item) => {
     return (
       <li key = {item.properties.OBJECTID} className="item" onMouseDown = {() =>
@@ -10,6 +10,7 @@ const List = ({drop,water,shelters,youth,matchMarker, lat, lng}) => {
           }
         }>
         <h5>{item.properties.NAME}</h5>
+        <b>{item.properties.ORGANIZATI}</b>
         <p>{item.properties.Address}</p>
       </li>
     );
@@ -22,7 +23,8 @@ const List = ({drop,water,shelters,youth,matchMarker, lat, lng}) => {
       }
     }>
         <h5>{item.properties.NAME}</h5>
-        <b>{item.properties.TYPE2}</b>
+        <b>{item.properties.TYPE2}</b> 
+        <b>{item.properties.OFFICE_PHO}</b><br />
         <p>{item.properties.ADDRESS_FU}</p>
       </li>
     );
@@ -35,7 +37,8 @@ const List = ({drop,water,shelters,youth,matchMarker, lat, lng}) => {
       }
     }>
         <h5>{item.properties.AGENCY_NAM}</h5>
-        <b>{item.properties.HOURS}</b>
+        <b>{item.properties.HOURS}</b><br />
+        <p>{item.properties.ORGANIZATI}</p>
         <p>{item.properties.ACCESSIBIL}</p>
       </li>
     );

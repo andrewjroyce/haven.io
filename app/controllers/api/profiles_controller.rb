@@ -3,7 +3,7 @@ class Api::ProfilesController < Api::UsersController
 
   def profile
     user = User.find(params[:id])
-    @headshot =User.select("name, gender, marital_status, profession, immigrant, age").where("admin = false").order(:id)
+    @headshot =User.select("name, gender, marital_status, profession, immigrant, age, picture").where("admin = false").order(:id)
     render json: @headshot
   end
  helper_method :headshot

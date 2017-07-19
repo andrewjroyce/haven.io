@@ -5,9 +5,6 @@ import SimpleMap from './SimpleMap.jsx'
 
 
 export default class UserDash extends React.Component {
-
-
-
   /**
    * @param props - Comes from your rails view.
    * @param _railsContext - Comes from React on Rails

@@ -22,7 +22,7 @@ export default class SimpleMap extends Component  {
       centerLat: this.props.center.lat,
       zoom: 14
     }
-  }s
+  }
 
   matchMarker(lat, lng) {
     const matchMarker = this.state.markers.filter((marker) => {
@@ -36,7 +36,6 @@ export default class SimpleMap extends Component  {
       this.state.maps.event.trigger(matchMarker[0], "click");
     }
   }
-
 
   static defaultProps = {
     center: {lat: 43.64444, lng: -79.39518},
@@ -64,7 +63,6 @@ export default class SimpleMap extends Component  {
           <GoogleMapReact bootstrapURLKeys={{
             key: 'AIzaSyDFeKjIbY0DFXhuE_iRx0rAGTOTUPjcXFs'
           }} onGoogleApiLoaded={({map, maps}) => {
-
             drop_ins.features.map((data) => {
               const infowindow = new maps.InfoWindow({
                 backgroundColor: 'rgb(57,57,57)',
@@ -99,7 +97,6 @@ export default class SimpleMap extends Component  {
               marker.set("id", data.properties.OBJECTID);
               drops.push(marker);
             });
-
 
             water.features.map((data) => {
               const infowindow = new maps.InfoWindow({

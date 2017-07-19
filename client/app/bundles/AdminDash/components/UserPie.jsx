@@ -1,7 +1,7 @@
 import React from 'react';
 import {PieChart, Pie, Legend, Tooltip, Cell} from 'recharts'
 
-const COLORS = ['#D5AAFF', '#6EB5FF', '#B28DFF', '#5CC6D9', '#97A2FF', '#FF9CEE', '#1B85B8'];
+const COLORS = ['#8884d8', '#83a6ed', '#8dd1e1', '#82ca9d', '#a4de6c', '#d0ed57', '#1B85B8'];
 
 export default class UserPie extends React.Component{
 
@@ -54,10 +54,10 @@ export default class UserPie extends React.Component{
           <Tooltip/>
         </PieChart>
         <div className="buttons">
-          <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('profession')}>Profession</button>
-          <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('immigrant')}>Immigration Status</button>
+          <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('profession')}>Job</button>
+          <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('immigrant')}>Status</button>
           <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('gender')}>Gender</button>
-          <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('ms')}>Marital Status</button>
+          <button className="waves-effect waves-light btn" onClick={()=>this.handleClick('ms')}>Marital</button>
         </div>
       </div>
     )

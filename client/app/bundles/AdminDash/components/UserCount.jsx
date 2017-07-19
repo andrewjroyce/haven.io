@@ -25,7 +25,7 @@ export default class LeftLayout extends React.Component {
     this.getCount();
     let poll = setInterval(()=>{
       this.getCount();
-    }, 2000)
+    }, 10000)
   }
 
   render(){

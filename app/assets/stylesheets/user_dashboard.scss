@@ -2,8 +2,7 @@
 @import "materialize/components/color";
 @import "materialize";
 
-body{
-  margin: 0;
+body {
   box-sizing: border-box;
   font-family: 'Roboto';
 }
@@ -26,8 +25,22 @@ body{
   border-style: groove;
 }
 
+.item-wrp li:focus{
+opacity: 90%;
+font-weight: bold;
+}
+
+.item-wrp li:hover{
+border-style: inset;
+}
+
+.item-wrp li:active{
+    background-color: white;
+    border-style: outset;
+}
+
 .item-wrp li:nth-child(odd){
-  background-color: gray;
+  background-color: #26a69a;
 }
 
 .item-wrp li h3{
