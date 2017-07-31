@@ -1,6 +1,11 @@
 # haven.to
+<p align="center"><img src="https://user-images.githubusercontent.com/25350697/28793899-88445bb2-7602-11e7-9395-3623caa501bf.gif"/></p>
 
-An app to collect data from the homeless by the homeless to help the homeless.
+An open-source project to better serve Toronto's homeless community.  
+Haven was started with one central idea in mind: That in an increasingly technological world Torontonians finding themselves without homes deserve world-class technological access to City Services in pursuit of housing stability.  
+
+Further, the adoption of this technology will decrease the time required by Social Workers to spend on each of their clients.  A simplified and visual representation of Client's Calgary Accuity Index provides a quick snapshot to social workers about their Clients needs and program service levels.  
+
 
 ## Setup
 1. Clone
